@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Styrene A';
+  font-display: swap;
+  font-weight: 400;
+  src: url('../assets/fonts/StyreneA-Regular-Web.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A';
+  font-display: swap;
+  font-weight: 700;
+  src: url('../assets/fonts/StyreneA-Bold-Web.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Styrene A';
+  font-display: swap;
+  font-weight: 300;
+  src: url('../assets/fonts/StyreneA-Light-Web.woff') format('woff');
+}
+
 // Classes
 @each $size in map-keys($texts) {
   .text-#{$size} {
@@ -17,6 +38,11 @@
   font-weight: $font-weight-normal;
   margin-bottom: 4px;
   font-size: 24px;
+}
+
+.text-hero,
+.text-display {
+  font-weight: 700;
 }
 
 // Links

@@ -45,7 +45,7 @@
 // Typography Mixins and functions
 @mixin text() {
   font-family: $font-family-primary;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 @mixin fontAwesome($boldness: 700) {
