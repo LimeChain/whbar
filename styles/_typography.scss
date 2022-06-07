@@ -40,20 +40,24 @@
   font-size: 24px;
 }
 
-.text-hero,
-.text-display {
+.text-bold {
   font-weight: 700;
+}
+
+.text-menu {
+  font-size: 13px;
+  font-weight: 300;
 }
 
 // Links
 .link {
-  @include custom-underline($body-color);
+  @include custom-underline($white);
 
-  color: $body-color;
+  color: $white;
   text-decoration: none;
 
   &:hover {
-    color: $body-color;
+    color: $white;
     text-decoration: none;
   }
 }
