@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -12,6 +13,14 @@ import logo from '../public/logo.svg';
 import logo_3D from '../public/logo-3D.svg';
 
 export default function Home() {
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setScroll(window.scrollY > 100);
+    });
+  }, []);
+
   return (
     <div>
       <Head>
@@ -21,7 +30,7 @@ export default function Home() {
 
       {/* Header */}
       <div className="container-header-wrapper">
-        <div className="container-header py-5 py-lg-7">
+        <div className={`container-header ${scroll ? 'is-sticky' : null} py-5`}>
           <div className="container">
             <div className="d-flex justify-content-between align-items-center">
               <div>
