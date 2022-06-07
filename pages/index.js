@@ -47,14 +47,13 @@ export default function Home() {
       <div className="py-5 py-lg-7">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 text-center">
+            <div className="col-lg-5 text-center">
               <Image src={image_01} alt="logo" />
             </div>
 
-            <div className="col-lg-6 mt-5 mt-lg-0 order-lg-first">
-              <h1 className="text-hero">
-                <span className="text-bold">What is wHBAR</span> and why do you need it?
-              </h1>
+            <div className="col-lg-7 mt-5 mt-lg-0 order-lg-first">
+              <h1 className="text-hero text-bold">What is wHBAR</h1>
+              <h2 className="text-title">and why do you need it?</h2>
               <p className="text-main mt-5">
                 So what is wrapped HBAR, or wHBAR, as it is known round here? It may sound like a
                 delicious candy, but it’s actually (if you can believe it!) something even better.
@@ -162,9 +161,9 @@ export default function Home() {
         </div>
       </div>
       <div id="conclusion" className="py-5 py-lg-7">
-        <div className="container">
-          <h2 className="text-title text-bold">To wrap things up</h2>
-          <p className="text-lead mt-5">
+        <div className="container text-center">
+          <h2 className="text-hero text-bold">To wrap things up</h2>
+          <p className="mt-5">
             WHBAR is an important tool that makes it possible for Hedera users to effortlessly
             participate in the broader Web3 ecosystem. It boosts interoperability, allows
             cross-chain involvement in various protocols and ecosystems and marks the start of
@@ -173,13 +172,13 @@ export default function Home() {
         </div>
       </div>
       <div className="py-5 py-lg-7">
-        <div className="container text-center">
+        <div className="container">
           <h2 className="text-title text-bold">Swap soon on Heliswap</h2>
           <p className="text-lead mt-5">
-            <span className="text-bold">Heliswap is the first DEX</span> for the Hedera ecosystem
-            that will allow you to swap tokens and earn LP rewards.
+            Heliswap is the first DEX for the Hedera ecosystem that will allow you to swap tokens
+            and earn LP rewards.
           </p>
-          <div className="text-center mt-5 mt-lg-7">
+          <div className="mt-5 mt-lg-7">
             <a href="#" className="btn btn-primary">
               Go to heliswap
             </a>

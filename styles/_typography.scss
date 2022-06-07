@@ -51,13 +51,13 @@
 
 // Links
 .link {
-  @include custom-underline($white);
+  @include custom-underline($darkest);
 
-  color: $white;
+  color: $darkest;
   text-decoration: none;
 
   &:hover {
-    color: $white;
+    color: $darkest;
     text-decoration: none;
   }
 }
