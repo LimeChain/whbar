@@ -7,6 +7,7 @@ import icon_03 from '../public/icons/icon-03.svg';
 import icon_04 from '../public/icons/icon-04.svg';
 import icon_05 from '../public/icons/icon-05.svg';
 import icon_06 from '../public/icons/icon-06.svg';
+import image_01 from '../public/image-01.svg';
 import logo from '../public/logo.svg';
 
 export default function Home() {
@@ -45,8 +46,12 @@ export default function Home() {
 
       <div className="py-5 py-lg-7">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
+          <div className="row align-items-center">
+            <div className="col-lg-6 text-center">
+              <Image src={image_01} alt="logo" />
+            </div>
+
+            <div className="col-lg-6 mt-5 mt-lg-0 order-lg-first">
               <h1 className="text-hero">
                 <span className="text-bold">What is wHBAR</span> and why do you need it?
               </h1>

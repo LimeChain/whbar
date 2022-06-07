@@ -10,6 +10,12 @@ body {
   min-height: 100vh;
 }
 
+body {
+  background-image: url('../public/body-bg.svg');
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+}
+
 ul {
   margin: 0;
   padding: 0;
