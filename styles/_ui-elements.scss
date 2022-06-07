@@ -6,5 +6,18 @@
   position: fixed;
   width: 100%;
   z-index: 2;
-  // background-color: $darkest;
+}
+
+.container-heliswap {
+  background-color: $darkest;
+  background-image: url('../public/container-bg.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  border-radius: 16px;
+  padding: 24px 118px;
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }

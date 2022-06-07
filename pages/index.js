@@ -9,6 +9,7 @@ import icon_05 from '../public/icons/icon-05.svg';
 import icon_06 from '../public/icons/icon-06.svg';
 import image_01 from '../public/image-01.svg';
 import logo from '../public/logo.svg';
+import logo_3D from '../public/logo-3D.svg';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
+      {/* Header */}
       <div className="container-header-wrapper">
         <div className="container-header py-5 py-lg-7">
           <div className="container">
@@ -43,7 +45,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Header */}
 
+      {/* What is WHBAR */}
       <div className="py-5 py-lg-7">
         <div className="container">
           <div className="row align-items-center">
@@ -52,7 +56,9 @@ export default function Home() {
             </div>
 
             <div className="col-lg-7 mt-5 mt-lg-0 order-lg-first">
-              <h1 className="text-hero text-bold">What is wHBAR</h1>
+              <h1 className="text-hero text-bold">
+                What is <span className="text-gradient">wHBAR</span>
+              </h1>
               <h2 className="text-title">and why do you need it?</h2>
               <p className="text-main mt-5">
                 So what is wrapped HBAR, or wHBAR, as it is known round here? It may sound like a
@@ -64,6 +70,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* What is WHBAR */}
+
+      {/* Details */}
       <div id="details" className="py-5 py-lg-7">
         <div className="container">
           <h2 className="text-title text-bold text-center">Here are the details</h2>
@@ -129,15 +138,21 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Details */}
+
+      {/* Wrapping */}
       <div id="wrapping" className="py-5 py-lg-7">
         <div className="container">
-          <div>
-            <h2 className="text-title text-bold">Wrapping 101</h2>
-            <p className="text-lead mt-5">
-              So what is ‘wrapping’ and how does this help us with our incompatibility problem?
-              Well, wrapping allows us to use crypto assets that would otherwise be unsupported on a
-              non-native chain. Here’s how it works:
-            </p>
+          <div className="row">
+            <div className="col-lg-6">
+              <h2 className="text-title text-bold">Wrapping 101</h2>
+              <p className="text-lead mt-5">
+                So <span className="text-gradient text-bold">what is ‘wrapping’</span> and how does
+                this help us with our incompatibility problem? Well, wrapping allows us to use
+                crypto assets that would otherwise be unsupported on a non-native chain. Here’s how
+                it works:
+              </p>
+            </div>
           </div>
 
           <div className="mt-5 mt-lg-9 row">
@@ -160,9 +175,14 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Wrapping */}
+
+      {/* Conclusion */}
       <div id="conclusion" className="py-5 py-lg-7">
         <div className="container text-center">
-          <h2 className="text-hero text-bold">To wrap things up</h2>
+          <h2 className="text-hero text-bold">
+            To <span className="text-gradient">wrap</span> things up
+          </h2>
           <p className="mt-5">
             WHBAR is an important tool that makes it possible for Hedera users to effortlessly
             participate in the broader Web3 ecosystem. It boosts interoperability, allows
@@ -171,20 +191,77 @@ export default function Home() {
           </p>
         </div>
       </div>
+      {/* Conclusion */}
+
+      {/* Heliswap */}
       <div className="py-5 py-lg-7">
         <div className="container">
-          <h2 className="text-title text-bold">Swap soon on Heliswap</h2>
-          <p className="text-lead mt-5">
-            Heliswap is the first DEX for the Hedera ecosystem that will allow you to swap tokens
-            and earn LP rewards.
-          </p>
-          <div className="mt-5 mt-lg-7">
-            <a href="#" className="btn btn-primary">
-              Go to heliswap
-            </a>
+          <div className="container-heliswap">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <h2 className="text-title text-white text-bold">Swap soon on Heliswap</h2>
+                <p className="text-main text-white mt-5">
+                  Heliswap is the first DEX for the Hedera ecosystem that will allow you to swap
+                  tokens and earn LP rewards.
+                </p>
+                <div className="mt-5 mt-lg-7">
+                  <a href="#" className="btn btn-white">
+                    Go to heliswap
+                  </a>
+                </div>
+              </div>
+
+              <div className="col-lg-6 text-lg-end">
+                <Image src={logo_3D} alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      {/* Heliswap */}
+
+      {/* Footer */}
+      <hr />
+      <div className="py-5 py-lg-7">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="d-flex align-items-center">
+                <a href="#">
+                  <Image src={logo} alt="logo" />
+                </a>
+
+                <ul className="d-flex ms-5">
+                  <li>
+                    <a href="#" className="link p-3">
+                      Link
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="link p-3">
+                      Link
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="link p-3">
+                      Link
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="col-lg-6 mt-5 mt-lg-0">
+              <p className="text-micro text-end">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+                dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+                sollicitudin lacus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Footer */}
     </div>
   );
 }

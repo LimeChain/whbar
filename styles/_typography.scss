@@ -49,6 +49,14 @@
   font-weight: 300;
 }
 
+.text-gradient {
+  background: linear-gradient(90deg, #2d84eb 18.72%, #9a1aff 46.77%);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 // Links
 .link {
   @include custom-underline($darkest);
