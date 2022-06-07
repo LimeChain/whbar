@@ -7,20 +7,40 @@ import icon_03 from '../public/icons/icon-03.svg';
 import icon_04 from '../public/icons/icon-04.svg';
 import icon_05 from '../public/icons/icon-05.svg';
 import icon_06 from '../public/icons/icon-06.svg';
+import logo from '../public/logo.svg';
 
 export default function Home() {
   return (
-    <div className="py-5 py-lg-7">
-      <div className="container">
-        <a className="text-menu link" href="#">
-          Details
-        </a>
-        <a className="text-menu link" href="#">
-          Wrapping 101
-        </a>
-        <a className="text-menu link" href="#">
-          Conclusion
-        </a>
+    <div>
+      <Head>
+        <title>wHBAR Landing page</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+
+      <div className="container-header-wrapper">
+        <div className="container-header py-5 py-lg-7">
+          <div className="container">
+            <div className="d-flex justify-content-between align-items-center">
+              <div>
+                <a href="#">
+                  <Image src={logo} alt="logo" />
+                </a>
+              </div>
+
+              <div>
+                <a className="text-menu link p-3" href="#details">
+                  Details
+                </a>
+                <a className="text-menu link p-3" href="#wrapping">
+                  Wrapping 101
+                </a>
+                <a className="text-menu link p-3" href="#conclusion">
+                  Conclusion
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="py-5 py-lg-7">
@@ -40,8 +60,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className="py-5 py-lg-7">
+      <div id="details" className="py-5 py-lg-7">
         <div className="container">
           <h2 className="text-title text-bold text-center">Here are the details</h2>
 
@@ -106,8 +125,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className="py-5 py-lg-7">
+      <div id="wrapping" className="py-5 py-lg-7">
         <div className="container">
           <div>
             <h2 className="text-title text-bold">Wrapping 101</h2>
@@ -138,8 +156,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className="py-5 py-lg-7">
+      <div id="conclusion" className="py-5 py-lg-7">
         <div className="container">
           <h2 className="text-title text-bold">To wrap things up</h2>
           <p className="text-lead mt-5">
@@ -150,7 +167,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-
       <div className="py-5 py-lg-7">
         <div className="container text-center">
           <h2 className="text-title text-bold">Swap soon on Heliswap</h2>
