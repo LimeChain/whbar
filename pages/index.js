@@ -1,6 +1,13 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
+import icon_01 from '../public/icons/icon-01.svg';
+import icon_02 from '../public/icons/icon-02.svg';
+import icon_03 from '../public/icons/icon-03.svg';
+import icon_04 from '../public/icons/icon-04.svg';
+import icon_05 from '../public/icons/icon-05.svg';
+import icon_06 from '../public/icons/icon-06.svg';
+
 export default function Home() {
   return (
     <div className="py-5 py-lg-7">
@@ -38,8 +45,10 @@ export default function Home() {
         <div className="container">
           <h2 className="text-title text-bold text-center">Here are the details</h2>
 
-          <div className="row mt-5 mt-lg-7">
-            <div className="col-lg-4"></div>
+          <div className="row mt-5 mt-lg-7 mt-xl-12 align-items-center">
+            <div className="col-lg-4 text-center">
+              <Image src={icon_01} alt="" />
+            </div>
             <div className="col-lg-8 mt-5 mt-lg-0">
               <h3 className="text-title">HBAR</h3>
               <p className="text-main mt-5">
@@ -50,8 +59,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row mt-5 mt-lg-7">
-            <div className="col-lg-4"></div>
+          <div className="row mt-5 mt-lg-7 mt-xl-12">
+            <div className="col-lg-4 text-center">
+              <Image src={icon_02} alt="" />
+            </div>
             <div className="col-lg-8 mt-5 mt-lg-0 order-lg-first">
               <h3 className="text-title">Tokens</h3>
               <p className="text-main mt-5">
@@ -62,8 +73,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row mt-5 mt-lg-7">
-            <div className="col-lg-4"></div>
+          <div className="row mt-5 mt-lg-7 mt-xl-12">
+            <div className="col-lg-4 text-center">
+              <Image src={icon_03} alt="" />
+            </div>
             <div className="col-lg-8 mt-5 mt-lg-0">
               <h3 className="text-title">ERC-20</h3>
               <p className="text-main mt-5">
@@ -77,8 +90,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row mt-5 mt-lg-7">
-            <div className="col-lg-4"></div>
+          <div className="row mt-5 mt-lg-7 mt-xl-12">
+            <div className="col-lg-4 text-center">
+              <Image src={icon_04} alt="" />
+            </div>
             <div className="col-lg-8 mt-5 mt-lg-0 order-lg-first">
               <h3 className="text-title">Access</h3>
               <p className="text-main mt-5">
@@ -103,9 +118,10 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-5 row">
+          <div className="mt-5 mt-lg-9 row">
             <div className="col-lg-6">
-              <p className="text-main">
+              <Image src={icon_05} alt="" />
+              <p className="text-main mt-5">
                 When wrapping, the original tokens are locked in a smart contract and new tokens of
                 equivalent value are minted. The key here is that these new ‘wrapped’ tokens are of
                 a standard supported by the target chain and, as such, can be used on that chain.{' '}
@@ -113,7 +129,8 @@ export default function Home() {
             </div>
 
             <div className="col-lg-6 mt-5 mt-lg-0">
-              <p className="text-main">
+              <Image src={icon_06} alt="" />
+              <p className="text-main mt-5">
                 In our case, wHBAR is the ERC-20 version of the HBAR token, which makes it
                 compatible with all networks that support that standard, including Ethereum.
               </p>
