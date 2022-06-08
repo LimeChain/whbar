@@ -33,3 +33,63 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+.carousel {
+  &.carousel-slider {
+    .control-arrow {
+      position: absolute;
+      top: 0;
+      width: 44px;
+      height: 44px;
+      z-index: 2;
+      border: 1px solid #111111 !important;
+      border-radius: 8px !important;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.control-prev,
+      &.control-next {
+        &::before {
+          content: '';
+          display: block;
+          background-repeat: no-repeat;
+          width: 24px;
+          height: 24px;
+          border: none;
+        }
+      }
+
+      &.control-prev {
+        right: 64px !important;
+        left: auto;
+
+        &::before {
+          background-image: url('../public/icons/arrow-prev.svg');
+        }
+      }
+
+      &.control-next {
+        &::before {
+          background-image: url('../public/icons/arrow-next.svg');
+        }
+      }
+
+      &.control-disabled {
+        display: block !important;
+        opacity: 0.1 !important;
+      }
+    }
+  }
+
+  .slide {
+    text-align: left !important;
+  }
+}
+
+.container-slide {
+  @include media-breakpoint-up(lg) {
+    border-left: 1px solid rgba(17, 17, 17, 0.2);
+  }
+}

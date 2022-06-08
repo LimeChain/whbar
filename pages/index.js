@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
+import { Carousel } from 'react-responsive-carousel';
+
 import icon_01 from '../public/icons/icon-01.svg';
 import icon_02 from '../public/icons/icon-02.svg';
 import icon_03 from '../public/icons/icon-03.svg';
@@ -164,24 +166,47 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-5 mt-lg-9 row">
-            <div className="col-lg-6">
-              <Image src={icon_05} alt="" />
-              <p className="text-main mt-5">
-                When wrapping, the original tokens are locked in a smart contract and new tokens of
-                equivalent value are minted. The key here is that these new ‘wrapped’ tokens are of
-                a standard supported by the target chain and, as such, can be used on that chain.{' '}
-              </p>
+          <Carousel centerMode={false} showIndicators={false} showStatus={false} showThumbs={false}>
+            <div className="mt-5 mt-lg-9 d-lg-flex">
+              <div className="col-lg-6 container-slide p-6">
+                <Image src={icon_05} alt="" />
+                <p className="text-main mt-5">
+                  When wrapping, the original tokens are locked in a smart contract and new tokens
+                  of equivalent value are minted. The key here is that these new ‘wrapped’ tokens
+                  are of a standard supported by the target chain and, as such, can be used on that
+                  chain.{' '}
+                </p>
+              </div>
+
+              <div className="col-lg-6 container-slide p-6 mt-5 mt-lg-0">
+                <Image src={icon_06} alt="" />
+                <p className="text-main mt-5">
+                  In our case, wHBAR is the ERC-20 version of the HBAR token, which makes it
+                  compatible with all networks that support that standard, including Ethereum.
+                </p>
+              </div>
             </div>
 
-            <div className="col-lg-6 mt-5 mt-lg-0">
-              <Image src={icon_06} alt="" />
-              <p className="text-main mt-5">
-                In our case, wHBAR is the ERC-20 version of the HBAR token, which makes it
-                compatible with all networks that support that standard, including Ethereum.
-              </p>
+            <div className="mt-5 mt-lg-9 d-lg-flex">
+              <div className="col-lg-6 container-slide p-6">
+                <Image src={icon_05} alt="" />
+                <p className="text-main mt-5">
+                  Wrapped tokens can be easily transferred between networks via bridges such as the
+                  Hashport portal, which connects Hedera Hashgraph with Ethereum and other EVM
+                  networks.
+                </p>
+              </div>
+
+              <div className="col-lg-6 container-slide p-6 mt-5 mt-lg-0">
+                <Image src={icon_06} alt="" />
+                <p className="text-main mt-5">
+                  If you, at any point, decide to redeem your wrapped tokens, those assets are burnt
+                  on the target chain and an equivalent amount of original tokens are unlocked on
+                  the native chain.
+                </p>
+              </div>
             </div>
-          </div>
+          </Carousel>
         </div>
       </div>
       {/* Wrapping */}
