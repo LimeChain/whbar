@@ -26,6 +26,13 @@ strong {
   font-weight: 600;
 }
 
+:target:before {
+  content: '';
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
+}
+
 // Helpers
 .text-overflow {
   @include text-overflow;

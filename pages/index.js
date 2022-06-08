@@ -84,8 +84,8 @@ export default function Home() {
       {/* What is WHBAR */}
 
       {/* Details */}
-      <div id="details" className="py-5 py-lg-7">
-        <div className="container">
+      <div id="details">
+        <div className="container py-5 py-lg-7">
           <h2 className="text-title text-bold text-center">Here are the details</h2>
 
           <div className="row mt-5 mt-lg-7 mt-xl-12 align-items-center">
@@ -152,8 +152,8 @@ export default function Home() {
       {/* Details */}
 
       {/* Wrapping */}
-      <div id="wrapping" className="py-5 py-lg-7">
-        <div className="container">
+      <div id="wrapping">
+        <div className="container py-5 py-lg-7">
           <div className="row">
             <div className="col-lg-6">
               <h2 className="text-title text-bold">Wrapping 101</h2>
@@ -212,8 +212,8 @@ export default function Home() {
       {/* Wrapping */}
 
       {/* Conclusion */}
-      <div id="conclusion" className="py-5 py-lg-7">
-        <div className="container text-center">
+      <div id="conclusion">
+        <div className="container text-center py-5 py-lg-7">
           <h2 className="text-hero text-bold">
             To <span className="text-gradient">wrap</span> things up
           </h2>
