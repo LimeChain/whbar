@@ -207,7 +207,11 @@ export default function Home() {
         <div className="container">
           <div className="container-heliswap">
             <div className="row align-items-center">
-              <div className="col-lg-6">
+              <div className="col-lg-6 text-center text-lg-end">
+                <Image src={logo_3D} alt="" />
+              </div>
+
+              <div className="col-lg-6 mt-5 mt-lg-0 order-lg-first">
                 <h2 className="text-title text-white text-bold">Swap soon on Heliswap</h2>
                 <p className="text-main text-white mt-5">
                   Heliswap is the first DEX for the Hedera ecosystem that will allow you to swap
@@ -218,10 +222,6 @@ export default function Home() {
                     Go to heliswap
                   </a>
                 </div>
-              </div>
-
-              <div className="col-lg-6 text-lg-end">
-                <Image src={logo_3D} alt="" />
               </div>
             </div>
           </div>
