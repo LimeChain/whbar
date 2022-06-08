@@ -32,9 +32,9 @@ export default function Home() {
 
       {/* Header */}
       <div className="container-header-wrapper">
-        <div className={`container-header ${scroll ? 'is-sticky' : null} py-5`}>
+        <div className={`container-sticky ${scroll ? 'is-sticky' : null}`}>
           <div className="container">
-            <div className="d-flex justify-content-between align-items-center">
+            <div className="container-header p-5 d-flex justify-content-between align-items-center">
               <div>
                 <a href="#">
                   <Image src={logo} alt="logo" />
@@ -286,7 +286,7 @@ export default function Home() {
                 <div className="d-flex ms-5 ms-lg-10">
                   <a href="#" className="icon-social is-twitter mx-3"></a>
                   <a href="#" className="icon-social is-telegram mx-3"></a>
-                  <a href="#" className="icon-social is-discord mx-3"></a>
+                  <a href="#" className="icon-social is-discord "></a>
                 </div>
               </div>
             </div>
