@@ -282,6 +282,12 @@ export default function Home() {
                     </a>
                   </li>
                 </ul>
+
+                <div className="d-flex ms-5 ms-lg-10">
+                  <a href="#" className="icon-social is-twitter mx-3"></a>
+                  <a href="#" className="icon-social is-telegram mx-3"></a>
+                  <a href="#" className="icon-social is-discord mx-3"></a>
+                </div>
               </div>
             </div>
 

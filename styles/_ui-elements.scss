@@ -93,3 +93,25 @@
     border-left: 1px solid rgba(17, 17, 17, 0.2);
   }
 }
+
+.icon-social {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  padding: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &.is-twitter {
+    background-image: url('../public/icons/icon-twitter.svg');
+  }
+
+  &.is-discord {
+    background-image: url('../public/icons/icon-discord.svg');
+  }
+
+  &.is-telegram {
+    background-image: url('../public/icons/icon-telegram.svg');
+  }
+}
