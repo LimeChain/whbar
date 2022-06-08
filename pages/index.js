@@ -34,7 +34,7 @@ export default function Home() {
       <div className="container-header-wrapper">
         <div className={`container-sticky ${scroll ? 'is-sticky' : null}`}>
           <div className="container">
-            <div className="container-header p-5 d-flex justify-content-between align-items-center">
+            <div className="container-header p-2 p-lg-5 d-flex justify-content-between align-items-center">
               <div>
                 <a href="#">
                   <Image src={logo} alt="logo" />
@@ -154,7 +154,7 @@ export default function Home() {
       {/* Wrapping */}
       <div id="wrapping">
         <div className="container py-5 py-lg-7">
-          <div className="row">
+          <div className="row mb-5 mb-lg-7">
             <div className="col-lg-6">
               <h2 className="text-title text-bold">Wrapping 101</h2>
               <p className="text-lead mt-5">
@@ -242,7 +242,7 @@ export default function Home() {
                   Heliswap is the first DEX for the Hedera ecosystem that will allow you to swap
                   tokens and earn LP rewards.
                 </p>
-                <div className="mt-5 mt-lg-7">
+                <div className="mt-5 mt-lg-7 text-center text-lg-start">
                   <a href="#" className="btn btn-white">
                     Go to heliswap
                   </a>
@@ -260,30 +260,32 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <div className="d-flex align-items-center">
-                <a href="#">
-                  <Image src={logo} alt="logo" />
-                </a>
+              <div className="d-lg-flex align-items-center">
+                <div className="d-flex align-items-center justify-content-between">
+                  <a href="#">
+                    <Image src={logo} alt="logo" />
+                  </a>
 
-                <ul className="d-flex ms-5">
-                  <li>
-                    <a href="#" className="link p-3">
-                      Link
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="link p-3">
-                      Link
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="link p-3">
-                      Link
-                    </a>
-                  </li>
-                </ul>
+                  <ul className="d-flex ms-5">
+                    <li>
+                      <a href="#" className="link p-3">
+                        Link
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="link p-3">
+                        Link
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="link p-3">
+                        Link
+                      </a>
+                    </li>
+                  </ul>
+                </div>
 
-                <div className="d-flex ms-5 ms-lg-10">
+                <div className="d-flex justify-content-center mt-5 mt-lg-0 ms-lg-10">
                   <a href="#" className="icon-social is-twitter mx-3"></a>
                   <a href="#" className="icon-social is-telegram mx-3"></a>
                   <a href="#" className="icon-social is-discord "></a>
@@ -292,7 +294,7 @@ export default function Home() {
             </div>
 
             <div className="col-lg-6 mt-5 mt-lg-0">
-              <p className="text-micro text-end">
+              <p className="text-micro text-lg-end">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
                 dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
                 sollicitudin lacus.

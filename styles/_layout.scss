@@ -13,7 +13,12 @@ body {
 body {
   background-image: url('../public/body-bg.svg');
   background-position: 100% 0;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
+
+  @include media-breakpoint-up(xl) {
+    background-image: url('../public/body-bg.svg'), url('../public/body-bg-vector.svg');
+    background-position: 100% 0, 100% 5%;
+  }
 }
 
 ul {
