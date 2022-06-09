@@ -243,7 +243,12 @@ export default function Home() {
                   Hedera and Ethereum ecosystems.
                 </p>
                 <div className="mt-5 mt-lg-7 text-center text-lg-start">
-                  <a href="#" className="btn btn-white">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://heli-swap-landing-page.vercel.app/"
+                    className="btn btn-white"
+                  >
                     Go to heliswap
                   </a>
                 </div>
