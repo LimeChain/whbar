@@ -239,8 +239,8 @@ export default function Home() {
               <div className="col-lg-6 mt-5 mt-lg-0 order-lg-first">
                 <h2 className="text-title text-white text-bold">Swap soon on Heliswap</h2>
                 <p className="text-main text-white mt-5">
-                  Heliswap is the first DEX for the Hedera ecosystem that will allow you to swap
-                  tokens and earn LP rewards.
+                  The first DEX for the Hedera ecosystem supporting cross-chain swaps between the
+                  Hedera and Ethereum ecosystems.
                 </p>
                 <div className="mt-5 mt-lg-7 text-center text-lg-start">
                   <a href="#" className="btn btn-white">

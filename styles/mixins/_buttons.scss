@@ -8,19 +8,9 @@
   $background,
   $border,
   $color: $btn-primary-color,
-  $hover-background:
-    if(
-      $color == $color-contrast-light,
-      shade-color($background, $btn-hover-bg-shade-amount),
-      tint-color($background, $btn-hover-bg-tint-amount)
-    ),
-  $hover-border:
-    if(
-      $color == $color-contrast-light,
-      shade-color($border, $btn-hover-border-shade-amount),
-      tint-color($border, $btn-hover-border-tint-amount)
-    ),
-  $hover-color: color-contrast($hover-background),
+  $hover-background: $btn-primary-hover-background,
+  $hover-border: $btn-primary-hover-color,
+  $hover-color: $btn-primary-hover-color,
   $active-background:
     if(
       $color == $color-contrast-light,
