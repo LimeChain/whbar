@@ -16,7 +16,14 @@
     .container-header {
       background: rgba(255, 255, 255, 0.35);
       border-radius: 8px;
+      backdrop-filter: blur(8px);
     }
+  }
+}
+
+.container-details {
+  @include media-breakpoint-up(lg) {
+    margin-top: 250px;
   }
 }
 

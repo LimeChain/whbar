@@ -85,16 +85,16 @@ export default function Home() {
 
       {/* Details */}
       <div id="details">
-        <div className="container py-5 py-lg-7">
+        <div className="container py-10 container-details">
           <h2 className="text-title text-bold text-center">Here are the details</h2>
 
-          <div className="row mt-5 mt-lg-7 mt-xl-12 align-items-center">
+          <div className="row mt-10 align-items-center">
             <div className="col-lg-4 text-center">
               <Image src={icon_01} alt="" />
             </div>
-            <div className="col-lg-8 mt-5 mt-lg-0">
+            <div className="col-lg-8 mt-5 mt-lg-0 text-center text-lg-start">
               <h3 className="text-title">HBAR</h3>
-              <p className="text-main mt-5">
+              <p className="text-main mt-2">
                 <span className="text-bold">HBAR is Hedera Hashgraph’s native token</span> and as
                 such can be used freely across the Hedera ecosystem. However, it cannot be used in
                 other Web3 networks. Why? Well...
@@ -102,13 +102,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row mt-5 mt-lg-7 mt-xl-12">
+          <div className="row mt-10 align-items-center">
             <div className="col-lg-4 text-center">
               <Image src={icon_02} alt="" />
             </div>
-            <div className="col-lg-8 mt-5 mt-lg-0 order-lg-first">
+            <div className="col-lg-8 mt-5 mt-lg-0 order-lg-first text-center text-lg-start">
               <h3 className="text-title">Tokens</h3>
-              <p className="text-main mt-5">
+              <p className="text-main mt-2">
                 <span className="text-bold">..tokens</span>. do not usually travel between Web3
                 networks. This is because different Web3 protocols generally use different token
                 standards, which makes them incompatible.
@@ -116,13 +116,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row mt-5 mt-lg-7 mt-xl-12">
+          <div className="row mt-10 align-items-center">
             <div className="col-lg-4 text-center">
               <Image src={icon_03} alt="" />
             </div>
-            <div className="col-lg-8 mt-5 mt-lg-0">
+            <div className="col-lg-8 mt-5 mt-lg-0 text-center text-lg-start">
               <h3 className="text-title">ERC-20</h3>
-              <p className="text-main mt-5">
+              <p className="text-main mt-2">
                 <span className="text-bold">
                   ERC-20 is the fungible token standard used on Ethereum
                 </span>{' '}
@@ -133,13 +133,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row mt-5 mt-lg-7 mt-xl-12">
+          <div className="row mt-10 align-items-center">
             <div className="col-lg-4 text-center">
               <Image src={icon_04} alt="" />
             </div>
-            <div className="col-lg-8 mt-5 mt-lg-0 order-lg-first">
+            <div className="col-lg-8 mt-5 mt-lg-0 order-lg-first text-center text-lg-start">
               <h3 className="text-title">Access</h3>
-              <p className="text-main mt-5">
+              <p className="text-main mt-2">
                 Since Hedera Hashgraph does not support the ERC-20 standard, you cannot use your
                 HBAR tokens to access DeFi products running on Ethereum or other EVM (Ethereum
                 Virtual Machine)-compatible networks. Seems inconvenient? Well, fret not! This is
@@ -153,11 +153,11 @@ export default function Home() {
 
       {/* Wrapping */}
       <div id="wrapping">
-        <div className="container py-5 py-lg-7">
+        <div className="container py-10">
           <div className="row mb-5 mb-lg-7">
             <div className="col-lg-6">
               <h2 className="text-title text-bold">Wrapping 101</h2>
-              <p className="text-lead mt-5">
+              <p className="text-main mt-5">
                 So <span className="text-gradient text-bold">what is ‘wrapping’</span> and how does
                 this help us with our incompatibility problem? Well, wrapping allows us to use
                 crypto assets that would otherwise be unsupported on a non-native chain. Here’s how
@@ -213,7 +213,7 @@ export default function Home() {
 
       {/* Conclusion */}
       <div id="conclusion">
-        <div className="container text-center py-5 py-lg-7">
+        <div className="container text-center py-10">
           <h2 className="text-hero text-bold">
             To <span className="text-gradient">wrap</span> things up
           </h2>
@@ -228,7 +228,7 @@ export default function Home() {
       {/* Conclusion */}
 
       {/* Heliswap */}
-      <div className="py-5 py-lg-7">
+      <div className="py-10">
         <div className="container">
           <div className="container-heliswap">
             <div className="row align-items-center">
@@ -261,7 +261,7 @@ export default function Home() {
 
       {/* Footer */}
       <hr />
-      <div className="py-5 py-lg-7">
+      <div className="py-10">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
