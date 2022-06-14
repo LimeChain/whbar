@@ -64,11 +64,11 @@ export default function Home() {
       <div className="py-5 py-lg-7">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-5 text-center">
+            <div className="col-lg-5 col-xl-4 text-center">
               <Image src={image_01} alt="logo" />
             </div>
 
-            <div className="col-lg-7 mt-5 mt-lg-0 order-lg-first">
+            <div className="col-lg-7 offset-xl-1 col-xl-6 mt-5 mt-lg-0 order-lg-first">
               <h1 className="text-hero text-bold">
                 What is <span className="text-gradient">wHBAR</span>
               </h1>
@@ -91,10 +91,10 @@ export default function Home() {
           <h2 className="text-title text-bold text-center">Here are the details</h2>
 
           <div className="row mt-10 align-items-center">
-            <div className="col-lg-4 text-center">
+            <div className="col-lg-4 offset-xl-2 col-xl-3 text-center text-xl-start">
               <Image src={icon_01} alt="" />
             </div>
-            <div className="col-lg-8 mt-5 mt-lg-0 text-center text-lg-start">
+            <div className="col-lg-8 col-xl-5 mt-5 mt-lg-0 text-center text-lg-start">
               <h3 className="text-title">HBAR</h3>
               <p className="text-main mt-2">
                 <span className="text-bold">HBAR is Hedera Hashgraph’s native token</span> and as
@@ -105,10 +105,10 @@ export default function Home() {
           </div>
 
           <div className="row mt-10 align-items-center">
-            <div className="col-lg-4 text-center">
+            <div className="col-lg-4 col-xl-3 text-center">
               <Image src={icon_02} alt="" />
             </div>
-            <div className="col-lg-8 mt-5 mt-lg-0 order-lg-first text-center text-lg-start">
+            <div className="col-lg-8 offset-xl-2 col-xl-5 mt-5 mt-lg-0 order-lg-first text-center text-lg-start">
               <h3 className="text-title">Tokens</h3>
               <p className="text-main mt-2">
                 <span className="text-bold">..tokens</span>. do not usually travel between Web3
@@ -119,10 +119,10 @@ export default function Home() {
           </div>
 
           <div className="row mt-10 align-items-center">
-            <div className="col-lg-4 text-center">
+            <div className="col-lg-4 offset-xl-2 col-xl-3 text-center text-xl-start">
               <Image src={icon_03} alt="" />
             </div>
-            <div className="col-lg-8 mt-5 mt-lg-0 text-center text-lg-start">
+            <div className="col-lg-8 col-xl-5 mt-5 mt-lg-0 text-center text-lg-start">
               <h3 className="text-title">ERC-20</h3>
               <p className="text-main mt-2">
                 <span className="text-bold">
@@ -136,10 +136,10 @@ export default function Home() {
           </div>
 
           <div className="row mt-10 align-items-center">
-            <div className="col-lg-4 text-center">
+            <div className="col-lg-4 col-xl-3 text-center">
               <Image src={icon_04} alt="" />
             </div>
-            <div className="col-lg-8 mt-5 mt-lg-0 order-lg-first text-center text-lg-start">
+            <div className="col-lg-8 offset-xl-2 col-xl-5 mt-5 mt-lg-0 order-lg-first text-center text-lg-start">
               <h3 className="text-title">Access</h3>
               <p className="text-main mt-2">
                 Since Hedera Hashgraph does not support the ERC-20 standard, you cannot use your
@@ -157,7 +157,7 @@ export default function Home() {
       <div id="wrapping">
         <div className="container py-10">
           <div className="row mb-5 mb-lg-7">
-            <div className="col-lg-6">
+            <div className="col-lg-6 offset-xl-1 col-xl-5">
               <h2 className="text-title text-bold">Wrapping 101</h2>
               <p className="text-main mt-5">
                 So <span className="text-gradient text-bold">what is ‘wrapping’</span> and how does
@@ -168,47 +168,56 @@ export default function Home() {
             </div>
           </div>
 
-          <Carousel centerMode={false} showIndicators={false} showStatus={false} showThumbs={false}>
-            <div className="mt-5 mt-lg-9 d-lg-flex">
-              <div className="col-lg-6 container-slide p-6">
-                <Image src={icon_05} alt="" />
-                <p className="text-main mt-5">
-                  When wrapping, the original tokens are locked in a smart contract and new tokens
-                  of equivalent value are minted. The key here is that these new ‘wrapped’ tokens
-                  are of a standard supported by the target chain and, as such, can be used on that
-                  chain.{' '}
-                </p>
-              </div>
+          <div className="row">
+            <div className="offset-xl-1 col-xl-10">
+              <Carousel
+                centerMode={false}
+                showIndicators={false}
+                showStatus={false}
+                showThumbs={false}
+              >
+                <div className="mt-5 mt-lg-9 d-lg-flex">
+                  <div className="col-lg-6 container-slide p-6">
+                    <Image src={icon_05} alt="" />
+                    <p className="text-main mt-5">
+                      When wrapping, the original tokens are locked in a smart contract and new
+                      tokens of equivalent value are minted. The key here is that these new
+                      ‘wrapped’ tokens are of a standard supported by the target chain and, as such,
+                      can be used on that chain.{' '}
+                    </p>
+                  </div>
 
-              <div className="col-lg-6 container-slide p-6 mt-5 mt-lg-0">
-                <Image src={icon_06} alt="" />
-                <p className="text-main mt-5">
-                  In our case, wHBAR is the ERC-20 version of the HBAR token, which makes it
-                  compatible with all networks that support that standard, including Ethereum.
-                </p>
-              </div>
+                  <div className="col-lg-6 container-slide p-6 mt-5 mt-lg-0">
+                    <Image src={icon_06} alt="" />
+                    <p className="text-main mt-5">
+                      In our case, wHBAR is the ERC-20 version of the HBAR token, which makes it
+                      compatible with all networks that support that standard, including Ethereum.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-5 mt-lg-9 d-lg-flex">
+                  <div className="col-lg-6 container-slide p-6">
+                    <Image src={icon_07} alt="" />
+                    <p className="text-main mt-5">
+                      Wrapped tokens can be easily transferred between networks via bridges such as
+                      the Hashport portal, which connects Hedera Hashgraph with Ethereum and other
+                      EVM networks.
+                    </p>
+                  </div>
+
+                  <div className="col-lg-6 container-slide p-6 mt-5 mt-lg-0">
+                    <Image src={icon_08} alt="" />
+                    <p className="text-main mt-5">
+                      If you, at any point, decide to redeem your wrapped tokens, those assets are
+                      burnt on the target chain and an equivalent amount of original tokens are
+                      unlocked on the native chain.
+                    </p>
+                  </div>
+                </div>
+              </Carousel>
             </div>
-
-            <div className="mt-5 mt-lg-9 d-lg-flex">
-              <div className="col-lg-6 container-slide p-6">
-                <Image src={icon_07} alt="" />
-                <p className="text-main mt-5">
-                  Wrapped tokens can be easily transferred between networks via bridges such as the
-                  Hashport portal, which connects Hedera Hashgraph with Ethereum and other EVM
-                  networks.
-                </p>
-              </div>
-
-              <div className="col-lg-6 container-slide p-6 mt-5 mt-lg-0">
-                <Image src={icon_08} alt="" />
-                <p className="text-main mt-5">
-                  If you, at any point, decide to redeem your wrapped tokens, those assets are burnt
-                  on the target chain and an equivalent amount of original tokens are unlocked on
-                  the native chain.
-                </p>
-              </div>
-            </div>
-          </Carousel>
+          </div>
         </div>
       </div>
       {/* Wrapping */}
@@ -216,15 +225,19 @@ export default function Home() {
       {/* Conclusion */}
       <div id="conclusion">
         <div className="container text-center py-10">
-          <h2 className="text-hero text-bold">
-            To <span className="text-gradient">wrap</span> things up
-          </h2>
-          <p className="mt-5">
-            WHBAR is an important tool that makes it possible for Hedera users to effortlessly
-            participate in the broader Web3 ecosystem. It boosts interoperability, allows
-            cross-chain involvement in various protocols and ecosystems and marks the start of
-            something great.
-          </p>
+          <div className="row">
+            <div className="offset-xl-2 col-xl-8">
+              <h2 className="text-hero text-bold">
+                To <span className="text-gradient">wrap</span> things up
+              </h2>
+              <p className="mt-5">
+                WHBAR is an important tool that makes it possible for Hedera users to effortlessly
+                participate in the broader Web3 ecosystem. It boosts interoperability, allows
+                cross-chain involvement in various protocols and ecosystems and marks the start of
+                something great.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       {/* Conclusion */}
@@ -232,27 +245,31 @@ export default function Home() {
       {/* Heliswap */}
       <div className="py-10">
         <div className="container">
-          <div className="container-heliswap">
-            <div className="row align-items-center">
-              <div className="col-lg-6 text-center text-lg-end">
-                <Image src={logo_3D} alt="" />
-              </div>
+          <div className="row">
+            <div className="offset-xl-1 col-xl-10">
+              <div className="container-heliswap">
+                <div className="row align-items-center">
+                  <div className="col-lg-6 text-center text-lg-end">
+                    <Image src={logo_3D} alt="" />
+                  </div>
 
-              <div className="col-lg-6 mt-5 mt-lg-0 order-lg-first">
-                <h2 className="text-title text-white text-bold">Swap soon on Heliswap</h2>
-                <p className="text-main text-white mt-5">
-                  The first DEX for the Hedera ecosystem supporting cross-chain swaps between the
-                  Hedera and Ethereum ecosystems.
-                </p>
-                <div className="mt-5 mt-lg-7 text-center text-lg-start">
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://heli-swap-landing-page.vercel.app/"
-                    className="btn btn-white"
-                  >
-                    Go to heliswap
-                  </a>
+                  <div className="col-lg-6 mt-5 mt-lg-0 order-lg-first">
+                    <h2 className="text-title text-white text-bold">Swap soon on Heliswap</h2>
+                    <p className="text-main text-white mt-5">
+                      The first DEX for the Hedera ecosystem supporting cross-chain swaps between
+                      the Hedera and Ethereum ecosystems.
+                    </p>
+                    <div className="mt-5 mt-lg-7 text-center text-lg-start">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://heli-swap-landing-page.vercel.app/"
+                        className="btn btn-white"
+                      >
+                        Go to heliswap
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
