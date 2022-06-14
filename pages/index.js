@@ -175,6 +175,7 @@ export default function Home() {
                 showIndicators={false}
                 showStatus={false}
                 showThumbs={false}
+                swipeable={false}
               >
                 <div className="mt-5 mt-lg-9 d-lg-flex">
                   <div className="col-lg-6 container-slide p-6">
