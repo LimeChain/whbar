@@ -17,7 +17,10 @@
     "sass": "^1.52.2"
   },
   "devDependencies": {
+    "@hashgraph/hethers": "^1.1.2",
     "eslint": "8.17.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "hardhat": "^2.9.9",
+    "hardhat-hethers": "^1.0.2"
   }
 }
