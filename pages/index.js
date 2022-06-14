@@ -30,6 +30,7 @@ export default function Home() {
       <Head>
         <title>wHBAR Landing page</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="wHBAR Landing page"></meta>
       </Head>
 
       {/* Header */}
@@ -39,7 +40,7 @@ export default function Home() {
             <div className="container-header p-2 p-lg-5 d-flex justify-content-between align-items-center">
               <div>
                 <a href="#">
-                  <Image src={logo} alt="logo" />
+                  <Image width={44} height={44} src={logo} alt="logo" />
                 </a>
               </div>
 
@@ -288,7 +289,7 @@ export default function Home() {
               <div className="d-lg-flex align-items-center">
                 <div className="d-flex align-items-center justify-content-between">
                   <a href="#">
-                    <Image src={logo} alt="logo" />
+                    <Image width={44} height={44} src={logo} alt="logo" />
                   </a>
 
                   <ul className="d-flex ms-5">
