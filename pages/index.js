@@ -12,9 +12,9 @@ import icon_05 from '../public/icons/icon-05.svg';
 import icon_06 from '../public/icons/icon-06.svg';
 import icon_07 from '../public/icons/icon-07.svg';
 import icon_08 from '../public/icons/icon-08.svg';
-import image_01 from '../public/image-01.svg';
+import image_01 from '../public/image-01.png';
 import logo from '../public/logo.svg';
-import logo_3D from '../public/logo-3D.svg';
+import logo_3D from '../public/logo-3D.png';
 
 export default function Home() {
   const [scroll, setScroll] = useState(false);
