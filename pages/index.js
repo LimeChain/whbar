@@ -10,6 +10,8 @@ import icon_03 from '../public/icons/icon-03.svg';
 import icon_04 from '../public/icons/icon-04.svg';
 import icon_05 from '../public/icons/icon-05.svg';
 import icon_06 from '../public/icons/icon-06.svg';
+import icon_07 from '../public/icons/icon-07.svg';
+import icon_08 from '../public/icons/icon-08.svg';
 import image_01 from '../public/image-01.svg';
 import logo from '../public/logo.svg';
 import logo_3D from '../public/logo-3D.svg';
@@ -189,7 +191,7 @@ export default function Home() {
 
             <div className="mt-5 mt-lg-9 d-lg-flex">
               <div className="col-lg-6 container-slide p-6">
-                <Image src={icon_05} alt="" />
+                <Image src={icon_07} alt="" />
                 <p className="text-main mt-5">
                   Wrapped tokens can be easily transferred between networks via bridges such as the
                   Hashport portal, which connects Hedera Hashgraph with Ethereum and other EVM
@@ -198,7 +200,7 @@ export default function Home() {
               </div>
 
               <div className="col-lg-6 container-slide p-6 mt-5 mt-lg-0">
-                <Image src={icon_06} alt="" />
+                <Image src={icon_08} alt="" />
                 <p className="text-main mt-5">
                   If you, at any point, decide to redeem your wrapped tokens, those assets are burnt
                   on the target chain and an equivalent amount of original tokens are unlocked on
