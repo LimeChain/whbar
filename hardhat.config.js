@@ -26,13 +26,4 @@ module.exports = {
     gasLimit: 3000000,
   },
   defaultNetwork: 'testnet',
-  abiExporter: {
-    only: [],
-    except: ['.*Mock$'],
-    clear: true,
-    flat: true,
-  },
-  gasReporter: {
-    enabled: true,
-  },
 };
