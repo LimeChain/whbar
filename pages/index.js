@@ -88,7 +88,7 @@ export default function Home() {
 
       {/* Details */}
       <div id="details">
-        <div className="container py-10 container-details">
+        <div className="container py-10 py-xl-15 container-details">
           <h2 className="text-title text-bold text-center">Here are the details</h2>
 
           <div className="row mt-10 align-items-center">
@@ -156,7 +156,7 @@ export default function Home() {
 
       {/* Wrapping */}
       <div id="wrapping">
-        <div className="container py-10">
+        <div className="container py-10 py-xl-15">
           <div className="row mb-5 mb-lg-7">
             <div className="col-lg-6 offset-xl-1 col-xl-5">
               <h2 className="text-title text-bold">Wrapping 101</h2>
@@ -226,7 +226,7 @@ export default function Home() {
 
       {/* Conclusion */}
       <div id="conclusion">
-        <div className="container text-center py-10">
+        <div className="container text-center py-10 py-xl-15">
           <div className="row">
             <div className="offset-xl-2 col-xl-8">
               <h2 className="text-hero text-bold">
@@ -245,7 +245,7 @@ export default function Home() {
       {/* Conclusion */}
 
       {/* Heliswap */}
-      <div className="py-10">
+      <div className="py-10 py-xl-15">
         <div className="container">
           <div className="row">
             <div className="offset-xl-1 col-xl-10">
