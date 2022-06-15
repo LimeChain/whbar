@@ -44,7 +44,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div>
+              <div className="d-flex">
                 <a className="text-menu link p-3" href="#details">
                   Details
                 </a>
