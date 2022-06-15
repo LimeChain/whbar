@@ -44,7 +44,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div>
+              <div className="d-flex">
                 <a className="text-menu link p-3" href="#details">
                   Details
                 </a>
@@ -88,7 +88,7 @@ export default function Home() {
 
       {/* Details */}
       <div id="details">
-        <div className="container py-10 container-details">
+        <div className="container py-10 py-xl-15 container-details">
           <h2 className="text-title text-bold text-center">Here are the details</h2>
 
           <div className="row mt-10 align-items-center">
@@ -156,7 +156,7 @@ export default function Home() {
 
       {/* Wrapping */}
       <div id="wrapping">
-        <div className="container py-10">
+        <div className="container py-10 py-xl-15">
           <div className="row mb-5 mb-lg-7">
             <div className="col-lg-6 offset-xl-1 col-xl-5">
               <h2 className="text-title text-bold">Wrapping 101</h2>
@@ -226,7 +226,7 @@ export default function Home() {
 
       {/* Conclusion */}
       <div id="conclusion">
-        <div className="container text-center py-10">
+        <div className="container text-center py-10 py-xl-15">
           <div className="row">
             <div className="offset-xl-2 col-xl-8">
               <h2 className="text-hero text-bold">
@@ -245,7 +245,7 @@ export default function Home() {
       {/* Conclusion */}
 
       {/* Heliswap */}
-      <div className="py-10">
+      <div className="py-10 py-xl-15">
         <div className="container">
           <div className="row">
             <div className="offset-xl-1 col-xl-10">
@@ -279,57 +279,6 @@ export default function Home() {
         </div>
       </div>
       {/* Heliswap */}
-
-      {/* Footer */}
-      <hr />
-      <div className="py-10">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="d-lg-flex align-items-center">
-                <div className="d-flex align-items-center justify-content-between">
-                  <a href="#">
-                    <Image width={44} height={44} src={logo} alt="logo" />
-                  </a>
-
-                  <ul className="d-flex ms-5">
-                    <li>
-                      <a href="#" className="link p-3">
-                        Link
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="link p-3">
-                        Link
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="link p-3">
-                        Link
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="d-flex justify-content-center mt-5 mt-lg-0 ms-lg-10">
-                  <a href="#" className="icon-social is-twitter mx-3"></a>
-                  <a href="#" className="icon-social is-telegram mx-3"></a>
-                  <a href="#" className="icon-social is-discord "></a>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-6 mt-5 mt-lg-0">
-              <p className="text-micro text-lg-end">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-                dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-                sollicitudin lacus.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Footer */}
     </div>
   );
 }
