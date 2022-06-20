@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-
+import Footer from '../components/Footer';
 import { Carousel } from 'react-responsive-carousel';
 
 import icon_01 from '../public/icons/icon-01.svg';
@@ -14,7 +14,7 @@ import icon_07 from '../public/icons/icon-07.svg';
 import icon_08 from '../public/icons/icon-08.svg';
 import image_01 from '../public/image-01.png';
 import logo from '../public/logo.svg';
-import logo_3D from '../public/logo-3D.png';
+// import logo_3D from '../public/logo-3D.png';
 
 export default function Home() {
   const [scroll, setScroll] = useState(false);
@@ -77,8 +77,8 @@ export default function Home() {
               <p className="text-main mt-5">
                 So what is wrapped HBAR, or wHBAR, as it is known round here? It may sound like a
                 delicious candy, but it’s actually (if you can believe it!) something even better.
-                It’s a vital piece of the Hedera ecosystem that allows for Hedera users to access
-                other protocols.
+                It’s a vital piece of the Hedera ecosystem that allows for Hedera HBAR holders to
+                fully utilise dApps developed on the Hedera Smart Contract Service.
               </p>
             </div>
           </div>
@@ -98,49 +98,33 @@ export default function Home() {
             <div className="col-lg-8 col-xl-5 mt-5 mt-lg-0 text-center text-lg-start">
               <h3 className="text-title">HBAR</h3>
               <p className="text-main mt-2">
-                <span className="text-bold">HBAR is Hedera Hashgraph’s native token</span> and as
-                such can be used freely across the Hedera ecosystem. However, it cannot be used in
-                other Web3 networks. Why? Well...
+                <span className="text-bold">HBAR</span> is Hedera Hashgraph’s native currency and as
+                such can be used freely across the Hedera Services. However, it does not conform to
+                the standard that EVM dApps normally use.
               </p>
             </div>
           </div>
 
           <div className="row mt-10 align-items-center">
             <div className="col-lg-4 col-xl-3 text-center">
-              <Image src={icon_02} alt="" />
+              <Image src={icon_03} alt="" />
             </div>
             <div className="col-lg-8 offset-xl-2 col-xl-5 mt-5 mt-lg-0 order-lg-first text-center text-lg-start">
-              <h3 className="text-title">Tokens</h3>
+              <h3 className="text-title">ERC-20</h3>
               <p className="text-main mt-2">
-                <span className="text-bold">..tokens</span>. do not usually travel between Web3
-                networks. This is because different Web3 protocols generally use different token
-                standards, which makes them incompatible.
+                <span className="text-bold">ERC-20</span> is the fungible token standard used on EVM
+                networks. It defines what a token is, how they are transferred and adds additional
+                properties such as approving someone else to spend your tokens. It is the most
+                widely used standard within Web3 dApps.
               </p>
             </div>
           </div>
 
           <div className="row mt-10 align-items-center">
             <div className="col-lg-4 offset-xl-2 col-xl-3 text-center text-xl-start">
-              <Image src={icon_03} alt="" />
-            </div>
-            <div className="col-lg-8 col-xl-5 mt-5 mt-lg-0 text-center text-lg-start">
-              <h3 className="text-title">ERC-20</h3>
-              <p className="text-main mt-2">
-                <span className="text-bold">
-                  ERC-20 is the fungible token standard used on Ethereum
-                </span>{' '}
-                , the go-to platform for DeFi and other decentralized applications. It defines how
-                tokens are transferred and how to keep a consistent record of those transfers among
-                Ethereum network accounts.
-              </p>
-            </div>
-          </div>
-
-          <div className="row mt-10 align-items-center">
-            <div className="col-lg-4 col-xl-3 text-center">
               <Image src={icon_04} alt="" />
             </div>
-            <div className="col-lg-8 offset-xl-2 col-xl-5 mt-5 mt-lg-0 order-lg-first text-center text-lg-start">
+            <div className="col-lg-8 col-xl-5 mt-5 mt-lg-0 text-center text-lg-start">
               <h3 className="text-title">Access</h3>
               <p className="text-main mt-2">
                 Since Hedera Hashgraph does not support the ERC-20 standard, you cannot use your
@@ -161,10 +145,8 @@ export default function Home() {
             <div className="col-lg-6 offset-xl-1 col-xl-5">
               <h2 className="text-title text-bold">Wrapping 101</h2>
               <p className="text-main mt-5">
-                So <span className="text-gradient text-bold">what is ‘wrapping’</span> and how does
-                this help us with our incompatibility problem? Well, wrapping allows us to use
-                crypto assets that would otherwise be unsupported on a non-native chain. Here’s how
-                it works:
+                Wrapping allows us to use native currencies that would otherwise be unsupported
+                within a dApp. Here’s how it works:
               </p>
             </div>
           </div>
@@ -182,10 +164,10 @@ export default function Home() {
                   <div className="col-lg-6 container-slide p-6">
                     <Image src={icon_05} alt="" />
                     <p className="text-main mt-5">
-                      When wrapping, the original tokens are locked in a smart contract and new
-                      tokens of equivalent value are minted. The key here is that these new
-                      ‘wrapped’ tokens are of a standard supported by the target chain and, as such,
-                      can be used on that chain.{' '}
+                      When wrapping, the original HBARs are being deposited in a smart contract and
+                      an ERC-20 representation of the HBAR is minted back to the depositor. The key
+                      here is that these new ‘wrapped’ tokens are ERC-20 compliant, thus they can be
+                      used throughout dApps easily.
                     </p>
                   </div>
 
@@ -193,7 +175,7 @@ export default function Home() {
                     <Image src={icon_06} alt="" />
                     <p className="text-main mt-5">
                       In our case, wHBAR is the ERC-20 version of the HBAR token, which makes it
-                      compatible with all networks that support that standard, including Ethereum.
+                      compatible with all dApps that support that standard.
                     </p>
                   </div>
                 </div>
@@ -211,9 +193,9 @@ export default function Home() {
                   <div className="col-lg-6 container-slide p-6 mt-5 mt-lg-0">
                     <Image src={icon_08} alt="" />
                     <p className="text-main mt-5">
-                      If you, at any point, decide to redeem your wrapped tokens, those assets are
-                      burnt on the target chain and an equivalent amount of original tokens are
-                      unlocked on the native chain.
+                      If you, at any point, decide to redeem your wrapped HBARs, you can do that by
+                      depositing your wHBARs. The same amount of HBARs will be sent back to your
+                      address in exchange for the provided wHBARs.
                     </p>
                   </div>
                 </div>
@@ -232,11 +214,10 @@ export default function Home() {
               <h2 className="text-hero text-bold">
                 To <span className="text-gradient">wrap</span> things up
               </h2>
-              <p className="mt-5">
-                WHBAR is an important tool that makes it possible for Hedera users to effortlessly
-                participate in the broader Web3 ecosystem. It boosts interoperability, allows
-                cross-chain involvement in various protocols and ecosystems and marks the start of
-                something great.
+              <p className="text-main mt-5">
+                wHBAR is an ERC-20 token that can be issued when HBARs are provided. Every wHBAR is
+                issued 1:1 with the amount of HBARs deposited. ERC-20 HBAR representation enables
+                the usage of HBAR throughout Hedera SCS dApps.
               </p>
             </div>
           </div>
@@ -245,7 +226,7 @@ export default function Home() {
       {/* Conclusion */}
 
       {/* Heliswap */}
-      <div className="py-10 py-xl-15">
+      {/* <div className="py-10 py-xl-15">
         <div className="container">
           <div className="row">
             <div className="offset-xl-1 col-xl-10">
@@ -277,8 +258,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Heliswap */}
+
+      <Footer />
     </div>
   );
 }
