@@ -47,9 +47,16 @@
 
 .carousel {
   &.carousel-slider {
+    padding-bottom: 64px;
+
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 0;
+    }
+
     .control-arrow {
       position: absolute;
-      top: 0;
+      bottom: 0;
+      top: auto;
       width: 44px;
       height: 44px;
       z-index: 2;
@@ -70,11 +77,19 @@
           height: 24px;
           border: none;
         }
+
+        @include media-breakpoint-up(lg) {
+          top: 50%;
+        }
       }
 
       &.control-prev {
-        right: 64px !important;
-        left: auto;
+        left: 50%;
+        transform: translateY(-100%);
+
+        @include media-breakpoint-up(lg) {
+          left: 24px;
+        }
 
         &::before {
           background-image: url('../public/icons/arrow-prev.svg');
@@ -82,6 +97,13 @@
       }
 
       &.control-next {
+        right: 50%;
+        transform: translateY(-100%);
+
+        @include media-breakpoint-up(lg) {
+          right: 24px;
+        }
+
         &::before {
           background-image: url('../public/icons/arrow-next.svg');
         }
@@ -100,8 +122,13 @@
 }
 
 .container-slide {
+  background-color: #fff;
+  border-radius: 24px;
+
+  padding: 24px;
+
   @include media-breakpoint-up(lg) {
-    border-left: 1px solid rgba(17, 17, 17, 0.2);
+    padding: 70px 24px;
   }
 }
 

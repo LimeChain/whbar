@@ -79,10 +79,9 @@ export default function Home() {
               </h1>
               <h2 className="text-title">and why do you need it?</h2>
               <p className="text-main mt-5">
-                So what is wrapped HBAR, or wHBAR, as it is known round here? It may sound like a
-                delicious candy, but it’s actually (if you can believe it!) something even better.
                 It’s a vital piece of the Hedera ecosystem that allows for Hedera HBAR holders to
-                fully utilise dApps developed on the Hedera Smart Contract Service.
+                fully utilise dApps developed on the Hedera Smart Contract Service. Here are the
+                details:
               </p>
             </div>
           </div>
@@ -131,10 +130,10 @@ export default function Home() {
             <div className="col-lg-8 col-xl-5 mt-5 mt-lg-0 text-center text-lg-start">
               <h3 className="text-title">Access</h3>
               <p className="text-main mt-2">
-                Since Hedera Hashgraph does not support the ERC-20 standard, you cannot use your
-                HBAR tokens to access DeFi products running on Ethereum or other EVM (Ethereum
-                Virtual Machine)-compatible networks. Seems inconvenient? Well, fret not! This is
-                where wHBAR comes into play!
+                Since <span className="text-bold">HBAR</span> is a{' '}
+                <span className="text-bold">native currency</span> built on the Hedera Hashgraph
+                prior to the existence of ERC-20, it does not support the standard. This is where
+                wHBAR comes into play!
               </p>
             </div>
           </div>
@@ -146,7 +145,7 @@ export default function Home() {
       <div id="wrapping">
         <div className="container py-10 py-xl-15">
           <div className="row mb-5 mb-lg-7">
-            <div className="col-lg-6 offset-xl-1 col-xl-5">
+            <div className="col-lg-10 offset-lg-1">
               <h2 className="text-title text-bold">Wrapping 101</h2>
               <p className="text-main mt-5">
                 Wrapping allows us to use native currencies that would otherwise be unsupported
@@ -155,57 +154,70 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row">
-            <div className="offset-xl-1 col-xl-10">
-              <Carousel
-                centerMode={false}
-                showIndicators={false}
-                showStatus={false}
-                showThumbs={false}
-                swipeable={false}
-              >
-                <div className="mt-5 mt-lg-9 d-lg-flex">
-                  <div className="col-lg-6 container-slide p-6">
-                    <Image src={icon_05} alt="" />
-                    <p className="text-main mt-5">
-                      When wrapping, the original HBARs are being deposited in a smart contract and
-                      an ERC-20 representation of the HBAR is minted back to the depositor. The key
-                      here is that these new ‘wrapped’ tokens are ERC-20 compliant, thus they can be
-                      used throughout dApps easily.
-                    </p>
-                  </div>
-
-                  <div className="col-lg-6 container-slide p-6 mt-5 mt-lg-0">
-                    <Image src={icon_06} alt="" />
-                    <p className="text-main mt-5">
-                      In our case, wHBAR is the ERC-20 version of the HBAR token, which makes it
-                      compatible with all dApps that support that standard.
-                    </p>
+          <Carousel
+            centerMode={false}
+            showIndicators={false}
+            showStatus={false}
+            showThumbs={false}
+            swipeable={false}
+          >
+            <div className="row">
+              <div className="col-lg-10 offset-lg-1">
+                <div className="container-slide">
+                  <div className="row align-items-center">
+                    <div className="col-lg-4 text-center">
+                      <Image src={icon_05} alt="" />
+                    </div>
+                    <div className="col-lg-6">
+                      <p className="text-main mt-5">
+                        When wrapping, the original HBARs are being deposited in a smart contract
+                        and an ERC-20 representation of the HBAR is minted back to the depositor.
+                        The key here is that these new ‘wrapped’ tokens are ERC-20 compliant, thus
+                        they can be used throughout dApps easily.
+                      </p>
+                    </div>
                   </div>
                 </div>
-
-                <div className="mt-5 mt-lg-9 d-lg-flex">
-                  <div className="col-lg-6 container-slide p-6">
-                    <Image src={icon_07} alt="" />
-                    <p className="text-main mt-5">
-                      Wrapped tokens can be easily transferred between networks via bridges such as
-                      the Hashport portal, which connects Hedera Hashgraph with Ethereum and other
-                      EVM networks.
-                    </p>
-                  </div>
-
-                  <div className="col-lg-6 container-slide p-6 mt-5 mt-lg-0">
-                    <Image src={icon_08} alt="" />
-                    <p className="text-main mt-5">
-                      If you, at any point, decide to redeem your wrapped HBARs, you can do that by
-                      depositing your wHBARs. The same amount of HBARs will be sent back to your
-                      address in exchange for the provided wHBARs.
-                    </p>
-                  </div>
-                </div>
-              </Carousel>
+              </div>
             </div>
-          </div>
+
+            <div className="row">
+              <div className="col-lg-10 offset-lg-1">
+                <div className="container-slide">
+                  <div className="row align-items-center">
+                    <div className="col-lg-4 text-center">
+                      <Image src={icon_06} alt="" />
+                    </div>
+                    <div className="col-lg-6">
+                      <p className="text-main mt-5">
+                        In our case, wHBAR is the ERC-20 version of the HBAR token, which makes it
+                        compatible with all dApps that support that standard.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-lg-10 offset-lg-1">
+                <div className="container-slide">
+                  <div className="row align-items-center">
+                    <div className="col-lg-4 text-center">
+                      <Image src={icon_08} alt="" />
+                    </div>
+                    <div className="col-lg-6">
+                      <p className="text-main mt-5">
+                        If you, at any point, decide to redeem your wrapped HBARs, you can do that
+                        by depositing your wHBARs. The same amount of HBARs will be sent back to
+                        your address in exchange for the provided wHBARs.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Carousel>
         </div>
       </div>
       {/* Wrapping */}
