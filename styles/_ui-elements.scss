@@ -78,17 +78,21 @@
           border: none;
         }
 
+        bottom: 0;
+
         @include media-breakpoint-up(lg) {
+          bottom: auto;
           top: 50%;
         }
       }
 
       &.control-prev {
         left: 50%;
-        transform: translateY(-100%);
+        transform: translateX(-120%);
 
         @include media-breakpoint-up(lg) {
           left: 24px;
+          transform: translateY(-100%);
         }
 
         &::before {
@@ -98,10 +102,11 @@
 
       &.control-next {
         right: 50%;
-        transform: translateY(-100%);
+        transform: translateX(120%);
 
         @include media-breakpoint-up(lg) {
           right: 24px;
+          transform: translateY(-100%);
         }
 
         &::before {
