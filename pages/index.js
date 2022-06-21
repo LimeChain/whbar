@@ -5,7 +5,6 @@ import Footer from '../components/Footer';
 import { Carousel } from 'react-responsive-carousel';
 
 import icon_01 from '../public/icons/icon-01.svg';
-import icon_02 from '../public/icons/icon-02.svg';
 import icon_03 from '../public/icons/icon-03.svg';
 import icon_04 from '../public/icons/icon-04.svg';
 import icon_05 from '../public/icons/icon-05.svg';
@@ -14,6 +13,7 @@ import icon_07 from '../public/icons/icon-07.svg';
 import icon_08 from '../public/icons/icon-08.svg';
 import image_01 from '../public/image-01.png';
 import logo from '../public/logo.svg';
+import Links from '../components/Links';
 // import logo_3D from '../public/logo-3D.png';
 
 export default function Home() {
@@ -44,16 +44,20 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="d-flex">
-                <a className="text-menu link p-3" href="#details">
+              <div className="d-flex align-items-center">
+                <a className="text-menu link p-4" href="#details">
                   Details
                 </a>
-                <a className="text-menu link p-3" href="#wrapping">
+                <a className="text-menu link p-4" href="#wrapping">
                   Wrapping 101
                 </a>
-                <a className="text-menu link p-3" href="#conclusion">
+                <a className="text-menu link p-4" href="#conclusion">
                   Conclusion
                 </a>
+
+                <span className="mx-4 d-none d-lg-block">|</span>
+
+                <Links className="d-none d-lg-flex" />
               </div>
             </div>
           </div>
