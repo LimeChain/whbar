@@ -4,6 +4,16 @@ Node version: `16.15.0`
 
 If you use another version, please use [n](https://github.com/tj/n) to manage.
 
+## 📇 WHBAR addresses
+
+### Testnet:
+
+`0x0000000000000000000000000000000002bc617fz`
+
+### Mainnet:
+
+`TO_BE_DEPLOYED`
+
 ## ✍️ Prerequisites
 
 Copy the config file and put your account and private key to the corresponding network object.
