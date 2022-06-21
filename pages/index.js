@@ -80,8 +80,7 @@ export default function Home() {
               <h2 className="text-title">and why do you need it?</h2>
               <p className="text-main mt-5">
                 It’s a vital piece of the Hedera ecosystem that allows for Hedera HBAR holders to
-                fully utilise dApps developed on the Hedera Smart Contract Service. Here are the
-                details:
+                fully utilise dApps developed on the Hedera Smart Contract Service.
               </p>
             </div>
           </div>
@@ -94,7 +93,7 @@ export default function Home() {
         <div className="container py-10 py-xl-15 container-details">
           <h2 className="text-title text-bold text-center">Here are the details</h2>
 
-          <div className="row mt-10 align-items-center">
+          <div className="row mt-10 mt-lg-15 align-items-center">
             <div className="col-lg-4 offset-xl-2 col-xl-3 text-center text-xl-start">
               <Image src={icon_01} alt="" />
             </div>
@@ -108,7 +107,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row mt-10 align-items-center">
+          <div className="row mt-10 mt-lg-15 align-items-center">
             <div className="col-lg-4 col-xl-3 text-center">
               <Image src={icon_03} alt="" />
             </div>
@@ -123,7 +122,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row mt-10 align-items-center">
+          <div className="row mt-10 mt-lg-15 align-items-center">
             <div className="col-lg-4 offset-xl-2 col-xl-3 text-center text-xl-start">
               <Image src={icon_04} alt="" />
             </div>
