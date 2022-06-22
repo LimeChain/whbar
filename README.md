@@ -7,12 +7,15 @@ If you use another version, please use [n](https://github.com/tj/n) to manage.
 ## 📇 WHBAR addresses
 
 ### Testnet:
+`Address`: `0x0000000000000000000000000000000002be8c90`
 
-`0x0000000000000000000000000000000002bc617fz`
+`Contract ID`: `0.0.46042256`
 
 ### Mainnet:
 
-`TO_BE_DEPLOYED`
+`Address`: `0x00000000000000000000000000000000000f7e89`
+
+`Contract ID`: `0.0.1015433`
 
 ## ✍️ Prerequisites
 

@@ -19,11 +19,11 @@ export default function Links({ className }) {
       <a
         target="_blank"
         rel="noreferrer"
-        href="#"
+        href="https://hashscan.io/#/mainnet/contract/0.0.1015433"
         className="text-small d-flex align-items-center link p-4"
       >
         <Image src={hashscan} alt="hashscan-logo" />
-        <span className="ms-3">Browse in Hashscan</span>
+        <span className="ms-3">View in HashScan</span>
       </a>
     </ul>
   );
