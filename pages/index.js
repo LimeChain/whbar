@@ -42,7 +42,7 @@ export default function Home() {
           property="og:description"
           content="HBAR dressed as an ERC20, removing the barrier to Hedera SCS dApps"
         />
-        <meta property="og:image" content="https://whbar.io/wHABR_og-image.png" />
+        <meta property="og:image" content="https://whbar.io/wHABR_og-image.png?1" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="whbar.io" />
@@ -52,7 +52,7 @@ export default function Home() {
           name="twitter:description"
           content="HBAR dressed as an ERC20, removing the barrier to Hedera SCS dApps"
         />
-        <meta name="twitter:image" content="https://whbar.io/wHABR_og-image.png" />
+        <meta name="twitter:image" content="https://whbar.io/wHABR_og-image.png?1" />
 
         <link rel="canonical" href="https://whbar.io" />
         <link rel="shortcut icon" href="/logo.svg" />
