@@ -39,10 +39,7 @@ export default function Home() {
           property="og:description"
           content="HBAR dressed as an ERC20, removing the barrier to Hedera SCS dApps"
         />
-        <meta
-          property="og:image"
-          content="https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png"
-        />
+        <meta property="og:image" content="https://whbar.io/wHABR_og-image.png" />
         <meta property="og:url" content="https://whbar.io" />
         <link rel="canonical" href="https://whbar.io" />
         <link rel="shortcut icon" href="/logo.svg" />
