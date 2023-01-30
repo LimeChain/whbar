@@ -7,7 +7,8 @@ If you use another version, please use [n](https://github.com/tj/n) to manage.
 ## 📇 WHBAR addresses
 
 ### Testnet:
-`Address`: `0x0000000000000000000000000000000002be8c90`
+
+`Address`: `0x0000000000000000000000000000000000001c3D`
 
 `Contract ID`: `0.0.46042256`
 
