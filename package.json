@@ -22,6 +22,7 @@
     "dotenv": "^16.0.3",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
+    "ethers": "^5.7.2",
     "hardhat": "^2.9.9",
     "hardhat-hethers": "^1.0.2"
   },

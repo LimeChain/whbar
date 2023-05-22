@@ -7,6 +7,11 @@ task('deployWhbar', 'Deploys WHBAR instance').setAction(async () => {
   await whbarDeployment();
 });
 
+task('withdraw', 'Withdraw WHBAR from Staker').setAction(async () => {
+  const withdrawHbar = require('./scripts/withdraw-hbar');
+  await withdrawHbar();
+});
+
 module.exports = {
   solidity: {
     compilers: [

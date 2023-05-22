@@ -7,9 +7,7 @@ import {
   ContractExecuteTransaction,
   ContractFunctionParameters,
   ContractInfoQuery,
-  Hbar,
 } from '@hashgraph/sdk';
-import { hethers } from '@hashgraph/hethers';
 import * as dotenv from 'dotenv';
 import BigNumber from 'bignumber.js';
 
@@ -22,20 +20,12 @@ console.clear();
 const bytecodeWHBAR = WHBAR.bytecode;
 const bytecodeStaker = Staker.bytecode;
 
-export const idToAddress = tokenId => {
-  return hethers.utils.getChecksumAddress(hethers.utils.getAddressFromAccount(tokenId));
-};
-
 //Grab your Hedera testnet account ID and private key from your .env file
 const myAccountId = AccountId.fromString(process.env.MY_ACCOUNT_ID);
-// const myPrivateKey = PrivateKey.fromString(process.env.MY_PRIVATE_KEY);
 const myPrivateKey = PrivateKey.fromStringECDSA(process.env.MY_PRIVATE_KEY);
 
 // Functions
 const getClient = () => {
-  // const stakeAccount = "0.0.7027";
-  const stakeAccount = AccountId.fromString('0.0.4538944');
-
   // If we weren't able to grab it, we should throw a new error
   if (!myAccountId || !myPrivateKey) {
     throw new Error('Environment variables MY_ACCOUNT_ID and MY_PRIVATE_KEY must be present');
@@ -50,13 +40,17 @@ const getClient = () => {
   return client;
 };
 
+// Deploy settings
+const stakedNodeId = 3;
+const stakeContractOwner = '0x61c90019e9fb0d95cbd39cb68e0b4f217526e2da';
+
 const deployContract = async client => {
   console.log('⚙️ Deploying Staker contract...');
   const contractStakerDeployTx = await new ContractCreateFlow()
     .setBytecode(bytecodeStaker)
-    .setGas(3000000)
-    .setStakedNodeId(3)
-    .setConstructorParameters(new ContractFunctionParameters().addAddress(idToAddress(myAccountId)))
+    .setGas(3_000_000)
+    .setStakedNodeId(stakedNodeId)
+    .setConstructorParameters(new ContractFunctionParameters().addAddress(stakeContractOwner))
     .setAdminKey(myPrivateKey)
     .setAutoRenewAccountId(myAccountId)
     .setAutoRenewPeriod(7862400)
@@ -71,7 +65,7 @@ const deployContract = async client => {
   console.log('⚙️ Deploying WHBAR contract...');
   const contractWHBARDeployTx = await new ContractCreateFlow()
     .setBytecode(bytecodeWHBAR)
-    .setGas(3000000)
+    .setGas(3_000_000)
     .setStakedAccountId(contractStakerId.toString())
     .setAutoRenewAccountId(myAccountId)
     .setAutoRenewPeriod(7862400)
@@ -137,25 +131,27 @@ const getContractInfo = async (client, contractId) => {
   console.log(`-- stakedAccountId: ${accountInfo.stakingInfo.stakedAccountId}`);
   console.log(`-- stakedNodeId: ${accountInfo.stakingInfo.stakedNodeId}`);
   console.log(`-- declineStakingReward: ${accountInfo.stakingInfo.declineStakingReward}`);
+  console.log(`-- pendingReward: ${accountInfo.stakingInfo.pendingReward}`);
+  console.log(`-- stakePeriodStart: ${accountInfo.stakingInfo.stakePeriodStart}`);
+  console.log(`-- stakedToMe: ${accountInfo.stakingInfo.stakedToMe}`);
 };
 
 const client = getClient();
 
 // await deployContract(client);
+// await depositHBAR(client, '0.0.13337503');
 
-await getContractInfo(client, '0.0.10605999');
-await getContractInfo(client, '0.0.10606002');
-
-// await depositHBAR(client, '0.0.10606002');
+await getContractInfo(client, '0.0.13337500');
+await getContractInfo(client, '0.0.13337503');
 
 /*
-- Staking info for 0.0.10605999 (Staker):
+- Staking info for 0.0.13337500 (Staker):
 -- stakedAccountId: null
 -- stakedNodeId: 3
 -- declineStakingReward: false
 
-- Staking info from 0.0.10606002 (WHBAR):
--- stakedAccountId: 0.0.10605999
+- Staking info from 0.0.13337503 (WHBAR):
+-- stakedAccountId: 0.0.13337500
 -- stakedNodeId: null
 -- declineStakingReward: false
 */
