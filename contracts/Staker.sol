@@ -1,24 +1,15 @@
-// SPDX-License-Identifier: Apache-2.0
-pragma solidity =0.6.12;
-pragma experimental ABIEncoderV2;
+// SPDX-License-Identifier: GPL-2.0-or-later
+pragma solidity ^0.8.0;
+import '@openzeppelin/contracts/access/Ownable.sol';
 
-contract Staker {
-  address public owner;
-
-  constructor(address _owner) public {
-    owner = _owner;
-  }
-
+contract Staker is Ownable {
   receive() external payable {}
 
-  function withdraw(uint _amount, address payable _to) external returns (bytes memory) {
-    require(owner == msg.sender, 'Sender is not the owner');
+  function withdraw(uint _amount, address payable _to) external onlyOwner {
     require(address(this).balance >= _amount, 'Insufficient amount');
     require(_to != address(0), 'Invalid recipient address');
 
-    (bool sent, bytes memory data) = _to.call{ value: _amount }('');
-    require(sent, 'Failed to send HBAR');
-
-    return data;
+    (bool success, ) = _to.call{ value: _amount }(new bytes(0));
+    require(success, 'Failed to send HBAR');
   }
 }
