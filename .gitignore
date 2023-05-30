@@ -36,3 +36,5 @@ config.js
 #Hardhat files
 cache
 artifacts
+
+.env
