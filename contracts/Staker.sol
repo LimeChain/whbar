@@ -5,7 +5,7 @@ import '@openzeppelin/contracts/access/Ownable.sol';
 contract Staker is Ownable {
   receive() external payable {}
 
-  function withdraw(uint _amount, address payable _to) external onlyOwner {
+  function withdraw(uint256 _amount, address _to) external onlyOwner {
     require(address(this).balance >= _amount, 'Insufficient amount');
     require(_to != address(0), 'Invalid recipient address');
 
