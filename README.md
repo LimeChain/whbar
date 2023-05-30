@@ -14,9 +14,9 @@ If you use another version, please use [n](https://github.com/tj/n) to manage.
 
 ### Mainnet:
 
-`Address`: `0x00000000000000000000000000000000000f7e89`
+`Address`: `0x00000000000000000000000000000000002cc823`
 
-`Contract ID`: `0.0.1015433`
+`Contract ID`: `0.0.2934819`
 
 ## ✍️ Prerequisites
 
