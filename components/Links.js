@@ -19,7 +19,7 @@ export default function Links({ className }) {
       <a
         target="_blank"
         rel="noreferrer"
-        href="https://hashscan.io/#/mainnet/contract/0.0.1015433"
+        href="https://hashscan.io/mainnet/contract/0.0.2934819"
         className="text-small d-flex align-items-center link p-4"
       >
         <Image src={hashscan} alt="hashscan-logo" />
